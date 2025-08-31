@@ -27,7 +27,7 @@ For the 100 element array, this is how long each operation will take:
 
 ## Question 4
 
-A search looking for every instance of an element in an array will not stop at finding the first one, and so will look through the entire array. A counter will be included that has 1 added to it for every found instance. If the array has N elements, the number of searches will be N. If a counter is updated for each search find, the result will be N plus the number of times "apple" appears in the array.
+A search looking for every instance of an element in an array will not stop at finding the first one, and so will look through the entire array. A counter will be included that has 1 added to it for every found instance. If the array has N elements, the number of searches will be N. For the example given in the question of searching for "apple," if a counter is updated for each search find, the result will be N plus the number of times "apple" appears in the array.
 
 ## Question 5
 
@@ -36,3 +36,7 @@ To find the memory address of an array in C++, std::addressof must be used.
 ```c++
 return addressof(numbers);
 ```
+
+## Video Link
+
+https://sdccd.us-west-2.instructuremedia.com/embed/a828221c-d28e-4c0d-aff6-15175a6a7bef
