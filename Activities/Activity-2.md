@@ -14,10 +14,38 @@ A binary search's worst-case scenario (big O) search would be in log base 2 of t
 
 ```c++
 //Linear search in C++.
-for (i = 0; i < array.length; i++)
+public void Search(array a, int t)
 {
-if (array(i) = )
+for (i = 0; i < (a.length - 1); i++)
+  {
+  if (array(i) = t)
+    {
+      return i + 1;//Returns the placement in the array that the target value is located in.
+    }
+  }
+  return -1;
 }
 
 //Binary search in C++.
+public void Search(array a, int n, int t)
+{
+int lower = 0;
+int upper = n - 1;
+while (lower < upper)
+  {
+  middle = /*FILL. "Floor ((lower + upper) / 2)"*/;
+  if (a(m) < t)//If this is true, that means the target would be further ahead in the array than the middle point (assuming the array is sorted), so a search will need to be performed later.
+    {
+      lower += middle + 1;//Changes the lower value for the next loop so that the new startpoint is based on the old middle, so that the next search is performed on the upper half.
+    }
+  else if (a(m) > t)
+    {
+      upper += middle - 1;//Changes the lower value for the next loop so that the new endpoint is based on the old middle, making the next search based on the lower half.
+    }
+    else
+    {
+      return middle;
+    }
+  }
+}
 ```
