@@ -1,6 +1,6 @@
 ## Question 1
 
-A linear search would take four steps to find the number 8 in the array, one for incrementing each unit.
+A linear search would take four steps to find the number 8 in the given array, one for incrementing each unit, as 8 is the fourth element in it.
 
 ## Question 2
 
