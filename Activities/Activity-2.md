@@ -29,11 +29,11 @@ for (i = 0; i < (a.length - 1); i++)
 //Binary search in C++.
 public void Search(array a, int n, int t)
 {
-int lower = 0;
-int upper = n - 1;
+int lower = 0;//At the beginning, the lower bound is the first element in the array (0).
+int upper = n - 1;//At the beginning, the upper bound is the last element in the array (length - 1 due to arrays starting at 0).
 while (lower < upper)
   {
-  middle = /*FILL. "Floor ((lower + upper) / 2)"*/;
+  middle = ((lower + upper) / 2);//Starts searching by what would be calculated as the halfway point. Integer division effectively floors this result if it is an odd number.
   if (a(m) < t)//If this is true, that means the target would be further ahead in the array than the middle point (assuming the array is sorted), so a search will need to be performed later.
     {
       lower += middle + 1;//Changes the lower value for the next loop so that the new startpoint is based on the old middle, so that the next search is performed on the upper half.
