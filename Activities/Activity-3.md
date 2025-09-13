@@ -8,7 +8,7 @@ As with Question 1, the steps would be represented as O(N<sup>2</sup>).
 
 ## Question 3
 
-The function listed on the question represents modifying an array's contents, one step, and then making a result based on the array's length. This
+The function listed on the question represents modifying an array's contents, one step, and then making a result based on the array's length. It would take N steps to double the array's elements, then N-1 steps to take a number and add it to the previous one, the -1 is as the first step would be already taking two of the numbers in the array. The result is 2N-1, and in Big O notation, this is O(N).
 
 ## Question 4
 
