@@ -17,3 +17,7 @@ The function listed will take three actions for each element, which is 3N. As Bi
 ## Question 5
 
 Because this function is based on a cumulation of previous elements in the array, it grows in complexity based on the size of the array unlike the O(N) functions in previous questions. This closes in on being quadratic growth, with constant multiples that can be discarded in Big O notation, so its efficiency is O(N<sup>2</sup>).
+
+## Video Link
+
+https://sdccd.us-west-2.instructuremedia.com/embed/b062646f-59d9-4d6e-89e6-76d1b7f21639
