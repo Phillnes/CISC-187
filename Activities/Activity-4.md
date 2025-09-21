@@ -2,9 +2,11 @@
 
 The insertion sort's time complexity of O(N<sup>2</sup>) is from the average case of the algorithm needing to go through the entire array (going through the whole array by itself is O(N)), to a second factor as the number of times it goes through is dependent on the number of elements in the array. While the exact number of operations will decline as the index increases, this is not in such a way that would effect the overall pattern (it will still be close enough to N<sup>2</sup>), which is what Big O notation measures.
 
-A diagram of such a search can be represented quadratically, which in Big O notation, is O(N<sup>2</sup>), shown here:
+First, the sort goes through the array until it reaches a value that is smaller than the one before it. Once it does, it begins swapping from there. In each pass, the comparisons and swaps go through more of the array, but in an average case scenario, this starts out with a smaller number of elements being examined until the next pass goes through.
 
-(TODO: Make an image showing general steps insertion performs. Use arrays that have about half the elements sorted, and half not.)
+A best-case situation would simply be N, only needing to search each element of the array once, with no other passes through. A worst-case situation can be represented as a triangular number times two (each pair of elements has a compare and a swap operation performed), where every total number of steps is the sum of the number of elements and every integer below it, except the integer used as the base is one less than the total number of elements. This can be represented as (N-1)<sup>2</sup> + (N-1). The more the elements are pre-sorted, the closer the formula gets to N-1, but the process will be roughly quadratic aside from that as even one mismatched element would mean the sort will pass through the array multiple times. In Big O notation, the -1s and first-power N of the triangular formula are discarded as they become less relevant the higher the values become, leaving O(N<sup>2</sup>) as the time complexity.
+
+See Activity-4-Image for a reference of triangular numbers and how they can be used to count insertion sort (for the worst case scenario).
 
 ## Question 2
 
