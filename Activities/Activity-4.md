@@ -10,7 +10,7 @@ See Activity 4 Image for a reference of triangular numbers and how they can be u
 
 ## Question 2
 
-The worst case scenario of an array N=5 is all the elements being in reverse order. For integers, an example of this would be [5, 4, 3, 2, 1]. At index == 1, 5 is simply left alone at the start of the procedure, zero comparisons or swaps. At index == 2, 4 is compared to the only number before it, 5, and a swap is performed. As the index increases, more comparisons are performed on previous elements. In this worst-case scenario, the swap operation is always performed with every comparison, meaning the total number of actions is doubled from a best-case scenario of only comparisons being performed. The number of comparisons can be summarized as 1 + 2 + ... + (N-2) + (N-1). Including searches, this is doubled.
+The worst case scenario of an array N=5 is all the elements being in reverse order. For integers, an example of this would be [5, 4, 3, 2, 1]. At index == 1, 5 is simply left alone at the start of the procedure, zero comparisons or swaps. At index == 2, 4 is compared to the only number before it, 5, and a swap is performed. As the index increases, more comparisons are performed on previous elements. In this worst-case scenario, the swap operation is always performed with every comparison, meaning the total number of actions is doubled from a best-case scenario of only comparisons being performed. The number of comparisons can be summarized as 1 + 2 + ... + (N-2) + (N-1). Including swaps, this is doubled.
 
 For N=5, this is 2 * (1 + 2 + 3 + 4) which is 20.
 
