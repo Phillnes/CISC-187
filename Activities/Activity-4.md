@@ -6,7 +6,7 @@ First, the sort goes through the array until it reaches a value that is smaller 
 
 A best-case situation would simply be N, only needing to search each element of the array once, with no other passes through. A worst-case situation can be represented as a triangular number times two (each pair of elements has a compare and a swap operation performed), where every total number of steps is the sum of the number of elements and every integer below it, except the integer used as the base is one less than the total number of elements. This can be represented as (N-1)<sup>2</sup> + (N-1). The more the elements are pre-sorted, the closer the formula gets to N-1, but the process will be roughly quadratic aside from that as even one mismatched element would mean the sort will pass through the array multiple times. In Big O notation, the -1s and first-power N of the triangular formula are discarded as they become less relevant the higher the values become, leaving O(N<sup>2</sup>) as the time complexity.
 
-See Activity-4-Image for a reference of triangular numbers and how they can be used to count insertion sort (for the worst case scenario).
+See Activity 4 Image for a reference of triangular numbers and how they can be used to count insertion sort (for the worst case scenario).
 
 ## Question 2
 
