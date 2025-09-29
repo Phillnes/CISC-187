@@ -1,8 +1,15 @@
 ## Question 1
 
 ```c++
-hash<int> ;
+hash<int> hashList;
+
+for (int i = 0; i < array.length; i++)
+{
+  hashList(array[i]);
+}
 ```
+
+With the array's contents being converted to a hash, one can simply put the key in to get the value as an output.
 
 ## Question 2
 
