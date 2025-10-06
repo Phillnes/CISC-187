@@ -8,6 +8,37 @@ See Activity 6 Image 2. An ENQUEUE(Q,n) operation adds element *n* to the queue 
 
 ## Question 3
 
+Enqueue rewritten to detect overflow in pseudocode:
+```
+Q[Q.tail] = x
+if Q.tail == Q.length
+    Q.tail = 1
+else if Q.numberElems == Q.length
+    return error
+else Q.tail = Q.tail + 1
+```
+
+Dequeue rewritten to detect underflow in pseudocode:
+```
+x = Q[Q.head]
+if Q.head == Q.length
+    Q.head = 1
+else if Q.isEmpty
+    return error
+else Q.head = Q.head + 1
+return x
+```
+
 ## Question 4
+
+For a deque, operations would work somewhat like this, specifying the end that an element is added to or removed from, in pseudocode, for deque *D*:
+```
+PUSHFRONT(D,1)//Adds element 1 to the deque, from the front.
+PUSHBACK(D,2)//Adds element 2 to the deque, from the back.
+POPFRONT(D)//Removes the element on the front of the deque, in this case 1.
+POPBACK(D)//Removes the element on the back end of the deque, in this case 2, the only element.
+```
+
+Unlike a stack or queue, which has a single operation that applies to the front or back (for simplicity, since there is only one end being operated on, the end does not have to be stated), a deque needs to specify which end the operation is worked on.
 
 ## Video Explanation
