@@ -42,3 +42,5 @@ POPBACK(D)//Removes the element on the back end of the deque, in this case 2, th
 Unlike a stack or queue, which has a single operation that applies to the front or back (for simplicity, since there is only one end being operated on, the end does not have to be stated), a deque needs to specify which end the operation is worked on.
 
 ## Video Explanation
+
+https://sdccd.us-west-2.instructuremedia.com/embed/4dfd694e-4f60-4655-970e-6f53262032b4
