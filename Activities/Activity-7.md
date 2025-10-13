@@ -18,8 +18,8 @@ numList.insertAtFront(1);
 //Because of how insertAtFront works, the list is ordered 1, -100, 10, 4. The first item added is at the end.
 
 //Removing nodes from the start of the list.
-list.removeFromFront(1);
-list.removeFromFront(-100);
+numList.removeFromFront(1);
+numList.removeFromFront(-100);
 
 //The list would now be 10, and 4.
 ```
