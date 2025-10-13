@@ -25,3 +25,5 @@ numList.removeFromFront(-100);
 ```
 
 ## Video Explanation
+
+https://sdccd.us-west-2.instructuremedia.com/embed/a531b59a-f6f2-4684-a4b9-bbca39f554dd
