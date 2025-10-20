@@ -1,6 +1,6 @@
 ## Question 1
 
-See Activity 8 Image. Using a binary search will start at 1, with all values initially going to the right as they are greater than 1. From there, 
+See Activity 8 Image. Using a binary search will start at 1, with all values initially going to the right as they are greater than 1. From there, larger ones simply follow a direct path to the right, while any values smaller than the previous are sorted as children to the left.
 
 ## Question 2
 
@@ -8,7 +8,7 @@ A binary tree search has a time complexity of O(log(N)) at base 2. Searching thr
 
 ## Question 3
 
-Finding the greatest value in a binary search tree is a simple matter of always picking the right descendant for every node. Regardless of the values or their order, from the way this 
+Finding the greatest value in a binary search tree is a simple matter of always picking the right descendant for every node. Regardless of the values or their order, reaching a point where there are no longer any values to the right will mean that the highest end has been reached, as otherwise, larger values would have been placed on a right branch earlier.
 
 In pseudocode, it would look something like this:
 ```
@@ -29,11 +29,21 @@ The program would always pick the right descendant if one is present, and in the
 ## Question 4
 
 ```c++
-int[] a = [1,5,9,2,4,10,6,3,8];
+#include "Tree.h"
 
-class TreeNode:
-def __init__(self,val,left=none,right=none):
-  
+//Declares the array to be sorted.
+int a[9] = {1, 5, 9, 2, 4, 10, 6, 3, 8};
+
+//Declares the tree that the values will be organized by.
+Tree<int> treeSortedArray;
+
+//A loop that iterates based on the size of the array, inserting the value at the spot in to the tree by the binary search tree's own function.
+//This stops at the array's length so that this code could be used for other arrays of other sizes, not just the example one given in the question.
+for(int i = 0; i < a.length; i++)
+  {
+    treeSortedArray.insertNode(a[i]);
+  }
+
 ```
 
 ## Video Explanation
