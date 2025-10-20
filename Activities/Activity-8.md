@@ -15,11 +15,8 @@ In pseudocode, it would look something like this:
 largestValue = node.value;//Of the tree's root.
 while (node has right child)
 {
-  if (node has right child)
-  {
-    go to child;
-    largestValue = node.value;
-  }
+  go to right child;
+  largestValue = node.value;
 }
 return largestValue;
 ```
