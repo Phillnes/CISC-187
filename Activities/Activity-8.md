@@ -44,3 +44,5 @@ for(int i = 0; i < a.length; i++)
 ```
 
 ## Video Explanation
+
+https://sdccd.us-west-2.instructuremedia.com/embed/ea8567f6-a60d-40b9-b247-35fdae163960
