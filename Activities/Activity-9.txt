@@ -1,0 +1,15 @@
+===== Question 1 =====
+
+An 11 would be inserted at the rightmost end of the bottom row, below the 5. Since it is larger than every value above it, including the root of 10, it will be swapped with all of them along the way. Starting with the 5, then the 9, then the 10.
+
+See Activity 9 Image 1 for the final result. The right end will be unchanged.
+
+===== Question 2 =====
+
+Removing the root, the 10, would cause the last value, the 3, to take its place. The heap will then reorganize itself in a similar manner to adding a value, sorting it so that all nodes contain values lower than those of the nodes above them. This is accomplished by swapping the 3 with 9 (the larger of the two nodes below it), until it is at the point where both of its children (2 and 1) are smaller than it.
+
+See Activity 9 Image 2 for the final result.
+
+===== Question 3 =====
+
+Putting those numbers in to a heap would make a tree where 99 is at the root, the other numbers sorted in descending order. When popped and placed in an array, they will be organized, the result being: 99, 68, 55, 34, 22, 10, 2. Because popping a value from the tree will have the heap reorganize so that the largest value is at the top, this means that regardless of the input order, sorting them will always give the values from largest to smallest when using a binary heap. When forming the heap, only the 99 and 68 will cause swaps, as the others can be inserted in an arrangement that satisfies the requirements for a binary tree.
