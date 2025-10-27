@@ -13,3 +13,7 @@ See Activity 9 Image 2 for the final result.
 ===== Question 3 =====
 
 Putting those numbers in to a heap would make a tree where 99 is at the root, the other numbers sorted in descending order. When popped and placed in an array, they will be organized, the result being: 99, 68, 55, 34, 22, 10, 2. Because popping a value from the tree will have the heap reorganize so that the largest value is at the top, this means that regardless of the input order, sorting them will always give the values from largest to smallest when using a binary heap. When forming the heap, only the 99 and 68 will cause swaps, as the others can be inserted in an arrangement that satisfies the requirements for a binary tree.
+
+===== Video Explanation =====
+
+https://sdccd.us-west-2.instructuremedia.com/embed/ac3353e4-a036-45ba-ab61-1afcee0f37e4
