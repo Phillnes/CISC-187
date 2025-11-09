@@ -1,6 +1,6 @@
 ## Question 1
 
-See the file Activity-10-Map.png. This graph is meant to represent a hypothetical map of a city by major landmarks/areas and how they are connected to each other.
+See the file Activity 10 Map.png. This graph is meant to represent a hypothetical map of a city by major landmarks/areas and how they are connected to each other.
 
 ## Question 2
 
