@@ -1,6 +1,30 @@
 # include <iostream>
 using namespace std;
 
+breadthFirst(int[][i] start)
+{
+  Queue<int[]> frontierQueue;
+  int[][] discoveredSet;
+  frontierQueue.enqueue(start);
+
+  while (!fronttierQueue.isQueueEmpty())
+    {
+
+      //TODO: Make the loop count each instance where the second value is 1. These mark the adjacent vertices.
+      for (start : int[start][] == 1)
+      {
+        frontierQueue.enqueue(graph[i][]);
+      }
+    }
+}
+
+depthFirst(start)
+{
+  Stack<int[]> searchStack;
+
+
+}
+
 int main()
 {
   //0: Residential Area.
