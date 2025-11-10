@@ -15,3 +15,5 @@ The depth-first algorithm uses a stack instead of a queue, but also operates bas
 As the names suggest, depth-first travels more towards the end of a graph first; to the "depths" of it, so to speak, a "long" search. Breadth-first travels across the branches and evaluates the branches first, a "wide" search. Breadth-first would be better at finding a path in a graph that has a greater number of spreading branches, while depth-first would be better for a graph with less branches but longer paths.
 
 ## Video Explanation
+
+https://sdccd.us-west-2.instructuremedia.com/embed/ac13873c-e90e-48be-9193-94d0568cbb21
