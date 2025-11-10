@@ -1,34 +1,63 @@
 # include <iostream>
+# include "List.h"
 using namespace std;
 
-breadthFirst(int[] start)
+//Code to move a single node to its own array, for moving rows in the graph to the stack/queue.
+int[] moveNode(int[][] graph, int x)
+{
+  int[10] tempVertex;
+  for (y = 1; y < 10; y++)
+  {
+    tempVertex[y] = graph[x][y];
+  }
+  return tempVertex;
+}
+
+//"start" will be the graph overall, with n being the initial vertex, represented by the row.
+breadthFirst(int[][] start, int n)
 {
   Queue<int[]> frontierQueue;
-  int[][] discoveredSet;
-  frontierQueue.enqueue(start);
+  List<int[]> discoveredSet;
+  frontierQueue.enqueue(moveNode(start, n));
+  discoveredSet.insertAtFront(moveNode(start, n));
 
   while (!fronttierQueue.isQueueEmpty())
     {
-
-      int[] currentV = frontierQueue.dequeue(graph[][]);
-      //Loop that counts every instance where mapGraph[start][i] is 1, this indicates that the vertices are connected by an edge.
+      int[] currentV = frontierQueue.dequeue();
+      //Loop that counts every instance where mapGraph[n][i] is 1, this indicates that the vertices are connected by an edge.
       for (int i = 0; i < 10; i++)
       {
-        if (start : graph[][i] == 1 && !find(discoveredSet().begin, discoveredSet().end, adjV))
+        if (start[n][i] == 1 && !find(discoveredSet().begin, discoveredSet().end, adjV))
           {
-          adjV = ;
-          frontierQueue.enqueue(graph[i][]);//The vertex that is adjacent to the one being searched is added to the queue.
+          adjV = moveNode(start, n);
+          frontierQueue.enqueue(adjV);//The vertex that is adjacent to the one being searched is added to the queue.
           discoveredSet().add(adjV);
           }
       }
     }
 }
 
-depthFirst(start)
+depthFirst(int[][] start, int n)
 {
   Stack<int[]> searchStack;
+  searchStack.push(moveNode(start, n));
+  List<int[]> visitedSet;
 
-
+  while (!searchStack.empty())
+    {
+      int[] currentV = searchStack.pop();
+  
+      for (int i = 0; i < 10; i++)
+      {
+        if (start[n][i] == 1 && !find(visitedSet().begin, visitedSet().end, adjV))
+          {
+          adjV = moveNode(start, n);
+          frontierQueue.enqueue(adjV);
+          visitedSet().add(adjV);
+          searchStack.push(adjV);
+          }
+      }
+    }
 }
 
 int main()
