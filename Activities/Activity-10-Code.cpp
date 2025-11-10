@@ -12,11 +12,14 @@ breadthFirst(int[] start)
 
       int[] currentV = frontierQueue.dequeue(graph[][]);
       //Loop that counts every instance where mapGraph[start][i] is 1, this indicates that the vertices are connected by an edge.
-      for (start : graph[][i] == 1 && !find(discoveredSet().begin, discoveredSet().end, adjV))
+      for (int i = 0; i < 10; i++)
       {
-        adjV = ;
-        frontierQueue.enqueue(graph[i][]);//The vertex that is adjacent to the one being searched is added to the queue.
-        discoveredSet().add(adjV);
+        if (start : graph[][i] == 1 && !find(discoveredSet().begin, discoveredSet().end, adjV))
+          {
+          adjV = ;
+          frontierQueue.enqueue(graph[i][]);//The vertex that is adjacent to the one being searched is added to the queue.
+          discoveredSet().add(adjV);
+          }
       }
     }
 }
