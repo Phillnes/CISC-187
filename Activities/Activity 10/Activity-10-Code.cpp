@@ -86,6 +86,6 @@ int main()
     {2, 3, 4, 3, 3, 3, 2, 1, 1, 0}//Forest.
   };
 
-  breadthFirst(mapGraph);
-  depthFirst(mapGraph);
+  breadthFirst(mapGraph, 0);
+  depthFirst(mapGraph, 0);
 }
