@@ -1,7 +1,7 @@
 # include <iostream>
 using namespace std;
 
-breadthFirst(int[][i] start)
+breadthFirst(int[] start)
 {
   Queue<int[]> frontierQueue;
   int[][] discoveredSet;
@@ -10,10 +10,13 @@ breadthFirst(int[][i] start)
   while (!fronttierQueue.isQueueEmpty())
     {
 
-      //TODO: Make the loop count each instance where the second value is 1. These mark the adjacent vertices.
-      for (start : int[start][] == 1)
+      int[] currentV = frontierQueue.dequeue(graph[][]);
+      //Loop that counts every instance where mapGraph[start][i] is 1, this indicates that the vertices are connected by an edge.
+      for (start : graph[][i] == 1 && !find(discoveredSet().begin, discoveredSet().end, adjV))
       {
-        frontierQueue.enqueue(graph[i][]);
+        adjV = ;
+        frontierQueue.enqueue(graph[i][]);//The vertex that is adjacent to the one being searched is added to the queue.
+        discoveredSet().add(adjV);
       }
     }
 }
@@ -37,7 +40,7 @@ int main()
   //7: Entertainment District.
   //8: Beach.
   //9: Forest.
-  int graph[10][10] = 
+  int mapGraph[10][10] = 
   {
     {0, 1, 2, 1, 1, 2, 2, 1, 2, 2},//Residential Area.
     {1, 0, 1, 2, 2, 3, 3, 2, 3, 3},//Farms.
@@ -50,4 +53,7 @@ int main()
     {2, 3, 4, 3, 3, 3, 2, 1, 0, 1},//Beach.
     {2, 3, 4, 3, 3, 3, 2, 1, 1, 0}//Forest.
   };
+
+  breadthFirst(mapGraph);
+  depthFirst(mapGraph);
 }
