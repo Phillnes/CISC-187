@@ -2,6 +2,19 @@
 # include <cmath>
 using namespace std;
 
+int subArrayCount(int[] input, int place)
+{
+  if (place > input.size())
+  {
+    return 0;
+  }
+  else
+  {
+    cout << input(place) << endl;
+    subArrayCount(input, place + 1);
+  }
+}
+
 int numList(int[] input, int place)
 {
   if (place > input.size())
@@ -15,7 +28,8 @@ int numList(int[] input, int place)
   }
   else
   {
-    numList(input(), 0);
+    subArrayCount(input(), 0);
+    numlist(input, place + 1);
   }
 }
 
