@@ -23,3 +23,4 @@ See the C++ file.
 
 ## Video Explanation
 
+https://sdccd.us-west-2.instructuremedia.com/embed/0f3c84cc-2794-4069-8ad4-39bd8e314c3b
