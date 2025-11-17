@@ -4,7 +4,7 @@ The base case is when the value for low becomes greater than the value for high,
 
 ## Question 2
 
-Running factorial(10) will cause an infinite recursion. Because the base case is only if n is equal to 0, subtracting 2 in each recursion will skip over that for any even-numbered input. However, a positive odd-numbered input will still count down to 1, and would at least print out a function with a definitive end (it just will not be a factorial since every other factor is skipped).
+Running factorial(10) will cause an infinite recursion. Because the base case is only if n is equal to 1, subtracting 2 in each recursion will skip over that for any even-numbered input. However, a positive odd-numbered input will still count down to 1, and would at least print out a function with a definitive end (it just will not be a factorial since every other factor is skipped).
 
 ## Question 3
 
