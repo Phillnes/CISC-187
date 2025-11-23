@@ -32,12 +32,14 @@ The first function uses a single for loop based on the length of a variable arra
 
 The second function also uses a for loop for the array's length, so it has a time complexity of O(N). However, it does *not* create a new array, instead modifying the array that is put in. This gives it a space complexity of O(1), as no variable-length data is created within the function.
 
-The third function 
+The third function uses recursion instead of a loop, but the same general rules apply for time complexity. The number of calls to the function is based on the array's length, so it still has a time complexity of O(N). Like Version #2, it alters the existing array instead of creating a new one, *however,* the use of recursion means that it adds space for each call of the function. Since the function calls itself once per iteration, this gives it a space complexity of O(N).
+
+In short, all complexities of the three given versions are of O(N) except for the space complexity of Version #2.
 
 | Version | Time Complexity | Space Complexity |
 | ------- | --------------- | ---------------- |
 | Version #1  | O(N)  | O(N) |
 | Version #2  | O(N)  | O(1) |
-| Version #3  | Content Cell  | Content Cell  |
+| Version #3  | O(N)  | O(N) |
 
 ## Video Explanation
