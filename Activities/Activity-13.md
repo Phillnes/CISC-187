@@ -14,11 +14,11 @@ To change reverse(array) to a function of space complexity N(1), instead of crea
 function reverse(array)
 {
   let temp;
-  for (let i = array.length - 1; i >= array.length / 2; i--)//TODO: Double check that this works out.
+  for (let i = 0; i <= array.length / 2; i++)
   { 
         temp = array[i];
-        array[i] = array[(array.length - i)];
-        array[(array.length - i)] = temp;
+        array[i] = array[(array.length - i - 1)];
+        array[(array.length - i - 1)] = temp;
   }
 return array;
 }
