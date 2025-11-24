@@ -8,7 +8,7 @@ This function similarly pushes elements on to an array that is initially declare
 
 ## Question 3
 
-To change reverse(array) to a function of space complexity N(1), instead of creating a new array, the previous one must be modified.
+To change reverse(array) to a function of space complexity O(1), instead of creating a new array, the previous one must be modified.
 
 ```c++
 function reverse(array)
@@ -43,3 +43,5 @@ In short, all complexities of the three given versions are of O(N) except for th
 | Version #3  | O(N)  | O(N) |
 
 ## Video Explanation
+
+https://sdccd.us-west-2.instructuremedia.com/embed/db0b9948-32ba-45c6-8f67-75ddc9288706
