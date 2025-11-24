@@ -1,10 +1,10 @@
 ## Question 1
 
-This function pushes on to an array, but it only creates one array. The array can be of variable length N, so the space complexity is O(N).
+This function pushes on to an array, but it creates one in the process. The array can be of variable length N, so the space complexity is O(N).
 
 ## Question 2
 
-This function similarly pushes elements on to an empty that is initially declared empty, so despite the lack of a nested loop, the space complexity is still O(N). This shows how the space complexity differs from the time complexity.
+This function similarly pushes elements on to an array that is initially declared empty, so despite the lack of a nested loop, the space complexity is still O(N). This shows how the space complexity differs from the time complexity.
 
 ## Question 3
 
