@@ -1,20 +1,48 @@
 ## Task 1
 
-One function that would run at O(N+M) would be one that combines the two arrays and counts each unique (first and last) name, then return an array with all the names that have a counter of 2. This way, a single loop is used, 
+One function that would run at O(N+M) would be one that puts both arrays in a hash. The names of the sports teams are irrelevant, since it can be reasonably assumed that a person will not be on two different teams for the same sport. If the same first and last name appears twice, it would represent a person that qualifies as playing both sports.
+
+When the function reaches a first and last name that is already in the hash, it will add this to a special array called arrayOfDoubles. This can only happen when looking at the second array that has been searched; the function will convert the first array (I will use the first one put in, but it could be either), followed by a loop iterating through the second array, seeing if each element is in the 
+
+Searching a hash takes O(1), so it will not be calling an O(N) or O(M) function each time the arrays are compared to the hash. Converting the first array to a hash will take O(N), then the loop comparing each element of the second array to the hash will take O(M) iterations, giving a total of O(N+M).
 
 ```c++
+void(String a[], String b[])//Get the individual "first name" and "last name" elements
 
-return ;
+String arrayOfDoubles;//TODO correct the exact data type.
+
+//Converting a to a hash.
+
+for (i = 0; i < b.length; i++)
+{
+  if (b[i] /*is present in hash*/)
+  {
+    arrayOfDoubles = ;
+  }
+}
+
+return arrayOfDoubles;//TODO: cout.
 ```
 
 ## Task 2
 
-Since the function's numbers will always start at zero and end at the maximum value, the length of the array can be used to determine how many values will be in it, so the input array can be compared to an array containing all the integers from 0 to the array's length + 1.
+Since the function's numbers will always start at zero and end at the maximum value, the length of the array can be used to determine how many values will be in it. Any array will have the values from 0 to the value of the array's length, with an integer missing. A sum of integers formula can be used based only on the array's length (there is no need to individually add the elements since the numbers are known), then the array's elements will be subtracted in a single loop, the remaining number being the missing integer.
+
+The formula for a sum of a set of numbers is the number of integers * (first term + last term)/2. The first term will always be 0, and the number of integers will be the based on the last term.
 
 ```c++
-
-return missing;
+void(int a[])
+{
+int missing = a.length * a.length/2;//TODO: Double check that this adds up and a.length + 1 or a.length - 1 won't need to be used.
+for (i = 0; i < a.length; i++)
+  {
+    missing -= a[i];
+  }
+return missing;//TODO cout.
+}
 ```
+
+This will only use one loop, 
 
 ## Task 3
 
@@ -39,7 +67,7 @@ for (i = 1; i < a.length - 1; i++)
   }
 }
 
-return maximum - minimum;
+return maximum - minimum;//TODO convert to cout.
 ```
 
 ## Task 4
@@ -100,7 +128,7 @@ if (negativeProduct > positiveProduct)
     higherProduct = positiveProduct;//If the values are equal, higherProduct being assigned to either will still have the same result.
   }
 }
-return higherProduct;
+return higherProduct;//TODO convert to cout.
 ```
 
 ## Task 5
@@ -142,6 +170,7 @@ case: (a(i) == 97.0)
 break;
 //TODO: Make sure this is proper switch markup.
 //Make iterations of these for each value.
+//cout.
 }
 ```
 
